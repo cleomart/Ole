@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="356dp"
+        android:layout_height="165dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/schedule_repair_month"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="11dp"
+            android:ems="10"
+            android:hint="MM"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/schedule_repair_day"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/schedule_repair_day"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="DD"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/schedule_repair_year"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/schedule_repair_year"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="110dp"
+            android:ems="10"
+            android:hint="YYYY"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/schedule_repair_hour"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="11dp"
+            android:ems="10"
+            android:hint="HH"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/schedule_repair_minute"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/schedule_repair_month" />
+
+        <EditText
+            android:id="@+id/schedule_repair_minute"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="MM"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/schedule_repair_am_pm_field"
+            app:layout_constraintTop_toBottomOf="@+id/schedule_repair_day" />
+
+        <EditText
+            android:id="@+id/schedule_repair_repairer"
+            android:layout_width="239dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView17" />
+
+
+        <RadioGroup
+            android:id="@+id/schedule_repair_am_pm_field"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/amRadioButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:buttonTint="@color/darkGrey"
+                android:text="AM"
+                android:textColor="@color/textBlack" />
+
+            <RadioButton
+                android:id="@+id/pmRadioButton"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:buttonTint="@color/darkGrey"
+                android:text="PM"
+                android:textColor="@color/textBlack" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:text="Date:"
+            android:textColor="@color/textBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="38dp"
+            android:text="Time:"
+            android:textColor="@color/textBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="27dp"
+            android:text="Repairer:"
+            android:textColor="@color/textBlack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

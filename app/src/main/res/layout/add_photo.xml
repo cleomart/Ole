@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/add_photo_relative__layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="350dp"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/add_photo_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="203dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/ic_menu_camera" />
+
+        <Button
+            android:id="@+id/add_button_gallery"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="105dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/ic_menu_gallery" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

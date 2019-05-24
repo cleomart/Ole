@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrey"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TenantProfileActivity"
+    tools:showIn="@layout/app_bar_tenant_profile">
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/gender"
+        android:textAlignment="textEnd"
+        android:textColor="@color/textWhite"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_picture_field"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_picture_field"
+        app:layout_constraintTop_toBottomOf="@+id/room_number_field" />
+
+    <TextView
+        android:id="@+id/roommates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/roommates"
+        android:textAlignment="textEnd"
+        android:textColor="@color/textWhite"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_picture_field"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_picture_field"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/email"
+        android:textAlignment="textEnd"
+        android:textColor="@color/textWhite"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_picture_field"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_picture_field"
+        app:layout_constraintTop_toBottomOf="@+id/cell_phone" />
+
+    <TextView
+        android:id="@+id/date_of_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/date_of_birth"
+        android:textAlignment="textEnd"
+        android:textColor="@color/textWhite"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_picture_field"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_picture_field"
+        app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+    <TextView
+        android:id="@+id/cell_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cell_phone"
+        android:textAlignment="textEnd"
+        android:textColor="@color/textWhite"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/profile_picture_field"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_picture_field"
+        app:layout_constraintTop_toBottomOf="@+id/date_of_birth" />
+
+    <TextView
+        android:id="@+id/gender_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender Field"
+        android:textAlignment="textStart"
+        android:textColor="@color/textWhite"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gender"
+        app:layout_constraintEnd_toEndOf="@+id/room_number_field"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/room_number_field"
+        app:layout_constraintTop_toTopOf="@+id/gender"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/cell_phone_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Field"
+        android:textAlignment="textStart"
+        android:textColor="@color/textWhite"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cell_phone"
+        app:layout_constraintEnd_toEndOf="@+id/room_number_field"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/room_number_field"
+        app:layout_constraintTop_toTopOf="@+id/cell_phone" />
+
+    <TextView
+        android:id="@+id/email_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Field"
+        android:textAlignment="textStart"
+        android:textColor="@color/textWhite"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="@+id/room_number_field"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/room_number_field"
+        app:layout_constraintTop_toTopOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/date_of_birth_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth Field"
+        android:textAlignment="textStart"
+        android:textColor="@color/textWhite"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/date_of_birth"
+        app:layout_constraintEnd_toEndOf="@+id/room_number_field"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/room_number_field"
+        app:layout_constraintTop_toTopOf="@+id/date_of_birth"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/room_number_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/room_number"
+        android:textAlignment="textStart"
+        android:textColor="@color/textWhite"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tenant_name_field"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tenant_name_field"
+        app:layout_constraintTop_toBottomOf="@+id/property_name_field" />
+
+    <TextView
+        android:id="@+id/property_name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/property_name"
+        android:textAlignment="textStart"
+        android:textColor="@color/textWhite"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tenant_name_field"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tenant_name_field"
+        app:layout_constraintTop_toBottomOf="@+id/tenant_name_field" />
+
+    <TextView
+        android:id="@+id/tenant_name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/name"
+        android:textAlignment="textStart"
+        android:textColor="@color/textWhite"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/profile_picture_field"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_picture_field"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:contentDescription="@string/profile_picture"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/gender"
+        app:layout_constraintEnd_toStartOf="@+id/tenant_name_field"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tenant_name_field"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/rent_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/round_edges"
+        android:radius="10dp"
+        android:text="Set Rent"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

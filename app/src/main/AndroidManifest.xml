@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.corey.ole">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LandlordRepairActivity"
+            android:label="@string/title_activity_landlord_repair"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".TenantPropertyActivity"
+            android:label="@string/title_activity_tenant_property"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LandlordPoliciesActivity"
+            android:label="@string/title_activity_landlord_policies" />
+        <activity
+            android:name=".SetRentActivity"
+            android:label="@string/title_activity_set_rent"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LandlordAnnouncementsActivity"
+            android:label="@string/title_activity_landlord_announcements"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditAddPropertyActivity"
+            android:label="@string/title_activity_edit_add_property"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LandlordHomeActivity"
+            android:label="@string/title_activity_landlord_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PropertyDetailsActivity"
+            android:label="@string/title_activity_property_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TenantEditTenantProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TenantTenantProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RepairsActivity"
+            android:label="@string/title_activity_repairs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TenantConversationActivity"
+            android:label="@string/title_activity_conversation"
+            android:parentActivityName=".TenantMessagesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.corey.ole.TenantMessagesActivity" />
+        </activity>
+        <activity
+            android:name=".LandlordConversationActivity"
+            android:label="@string/title_activity_conversation"
+            android:parentActivityName=".LandlordMessagesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.corey.ole.LandlordMessagesActivity" />
+        </activity>
+        <activity
+            android:name=".TenantMessagesActivity"
+            android:label="@string/title_activity_messages"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LandlordMessagesActivity"
+            android:label="@string/title_activity_messages"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RentActivity"
+            android:label="@string/title_activity_rent"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TenantHomeActivity"
+            android:label="@string/title_activity_tenant_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LandlordTenantProfileActivity"
+            android:label="@string/title_activity_landlord_tenant_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LandlordProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LandlordEditProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TenantListActivity" />
+        <activity
+            android:name=".LandlordEditTenantProfileActivity"
+            android:label="@string/title_activity_landlord_edit_tenant_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TenantProfileActivity" />
+        <activity android:name=".SignupActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.corey.ole"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

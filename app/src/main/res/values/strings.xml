@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Olé</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="new_account">New Account?</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="auth_failed">Failed to login.</string>
+    <string name="drawer_open">drawer open.</string>
+    <string name="drawer_close">drawer close.</string>
+    <string name="title_activity_tenant_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="announcements">Announcements</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="title_activity_rent">Rent</string>
+    <string name="internet">Internet:</string>
+    <string name="electricity">Electricity:</string>
+    <string name="trash">Trash:</string>
+    <string name="water">Water:</string>
+    <string name="base_rent">Base Rent:</string>
+    <string name="you_pay">You Pay:</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="total">Total:</string>
+    <string name="title_activity_messages">Messages</string>
+    <string name="unread">unread</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="cell_phone">Cell Phone</string>
+    <string name="roommates">Roommates</string>
+    <string name="name">Name</string>
+    <string name="save">SAVE</string>
+    <string name="gender">Gender</string>
+    <string name="property_name">property name</string>
+    <string name="room_number">room number</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="title_activity_conversation">Conversation</string>
+    <string name="send_a_new_message">send a new message</string>
+    <string name="edit">Edit</string>
+    <string name="title_activity_edit_add_property">EditAddPropertyActivity</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_repairs">Repair</string>
+    <string name="request_a_repair">Request a Repair</string>
+    <string name="to">To:</string>
+    <string name="send">Send</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="property_image">Property image</string>
+    <string name="view_tenants">View Tenants</string>
+    <string name="property_notes">Property Notes</string>
+    <string name="address">Address</string>
+    <string name="building">Building</string>
+    <string name="property_policies">Property Policies</string>
+    <string name="title_activity_property_details">Property Details</string>
+    <string name="title_activity_landlord_home">My Properties</string>
+    <string name="menu_home">home</string>
+    <string name="menu_messages">messages</string>
+    <string name="menu_rent">rent</string>
+    <string name="menu_lease">lease</string>
+    <string name="menu_repair">repair</string>
+    <string name="menu_profile">profile</string>
+    <string name="menu_logout">logout</string>
+    <string name="menu_properties">properties</string>
+    <string name="about">About</string>
+    <string name="street">Street</string>
+    <string name="policy">Policy</string>
+    <string name="note">Note</string>
+    <string name="city_state_zip_code">City/State/Zip Code</string>
+    <string name="policies">policies</string>
+    <string name="tenants">tenants</string>
+    <string name="documents">documents</string>
+    <string name="title_activity_landlord_policies">Policies</string>
+    <string name="title_activity_landlord_announcements">Announcements</string>
+    <string name="title_activity_set_rent">Set Rent</string>
+    <string name="title_activity_landlord_tenant_profile">Tenant Profile</string>
+    <string name="title_activity_landlord_edit_tenant_profile">Edit Tenant Profile</string>
+
+    <string-array name="date_array">
+        <item>1st</item>
+        <item>2nd</item>
+        <item>3rd</item>
+        <item>4th</item>
+        <item>5th</item>
+        <item>6th</item>
+        <item>7th</item>
+        <item>8th</item>
+        <item>9th</item>
+        <item>10th</item>
+        <item>11th</item>
+        <item>12th</item>
+        <item>13th</item>
+        <item>14th</item>
+        <item>15th</item>
+        <item>16th</item>
+        <item>17th</item>
+        <item>18th</item>
+        <item>19th</item>
+        <item>20th</item>
+        <item>21st</item>
+        <item>22nd</item>
+        <item>23rd</item>
+        <item>24th</item>
+        <item>25th</item>
+        <item>26th</item>
+        <item>27th</item>
+        <item>28th</item>
+    </string-array>
+    <string name="title_activity_tenant_property">About the Property</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="room">Room</string>
+    <string name="about_the_property">about the property</string>
+    <string name="title_activity_landlord_repair">LandlordRepairActivity</string>
+</resources>

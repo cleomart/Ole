@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrey"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SetRentActivity"
+    tools:showIn="@layout/app_bar_set_rent">
+
+    <TextView
+        android:id="@+id/dueHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Due the"
+        android:textColor="@color/textWhite"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/daySpinner"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:entries="@array/date_array"
+        android:textColor="@color/textWhite"
+        android:theme="@style/Spinner"
+        app:layout_constraintBottom_toBottomOf="@+id/dueHeader"
+        app:layout_constraintStart_toEndOf="@+id/dueHeader"
+        app:layout_constraintTop_toTopOf="@+id/dueHeader" />
+
+    <TextView
+        android:id="@+id/dueHeader2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="of the month"
+        android:textColor="@color/textWhite"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dueHeader"
+        app:layout_constraintStart_toEndOf="@+id/daySpinner"
+        app:layout_constraintTop_toTopOf="@+id/dueHeader" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:stretchColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dueHeader">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/baseRentHeader"
+                android:layout_column="1"
+                android:text="@string/base_rent"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/baseRentLabel"
+                android:gravity="end"
+                android:text="$"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/baseRentValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="@color/textWhite" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/waterHeader"
+                android:layout_column="1"
+                android:text="@string/water"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/waterLabel"
+                android:gravity="end"
+                android:text="$"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/waterValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="@color/textWhite" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/trashHeader"
+                android:layout_column="1"
+                android:text="@string/trash"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/trashLabel"
+                android:gravity="end"
+                android:text="$"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/trashValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="@color/textWhite" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/electricityHeader"
+                android:layout_column="1"
+                android:text="@string/electricity"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/electricityLabel"
+                android:gravity="end"
+                android:text="$"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/electricityValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="@color/textWhite" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/internetHeader"
+                android:layout_column="1"
+                android:text="@string/internet"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/internetLabel"
+                android:gravity="end"
+                android:text="$"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/internetValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="@color/textWhite" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/totalHeader"
+                android:layout_column="1"
+                android:layout_marginTop="16dp"
+                android:text="@string/total"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/totalLabel"
+                android:layout_marginTop="16dp"
+                android:gravity="end"
+                android:text="$"
+                android:textColor="@color/textWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalValue"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="16dp"
+                android:text="0"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textWhite"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/urlValue"
+        style="@style/Base.ThemeOverlay.AppCompat.Dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="128dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="http://"
+        android:inputType="textUri"
+        android:textColor="@color/textWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/urlLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Link to Payment Portal:"
+        android:textAlignment="center"
+        android:textColor="@color/textWhite"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/urlValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>
