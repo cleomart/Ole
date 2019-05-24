@@ -1,7 +1,7 @@
 ## Olé
+![Alt Text](https://drive.google.com/file/d/1TyY2zHZe7d-Vyw3Kaa3AqgEviiMH2y8Z/view?usp=sharing)
 
-## This is an Android app to aid communication in the administration needs of landlords and tenants.
-This project was designed and developed for CS 160 at UC Berkeley in Spring 2019
+This is an Android app to aid communication in the administration needs of landlords and tenants. This project was designed and developed for CS 160 at UC Berkeley in Spring 2019
 
 Project contributors: Netra Sathe, Autumn Wozniak, Leomart Crisostomo, and Corey Hu
 
