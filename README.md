@@ -1,9 +1,9 @@
-## Olé
+# Olé
 ![](https://github.com/cleomart/Ole/blob/master/OleFrontPage.png)
 
 This is an Android app to aid communication in the administration needs of landlords and tenants. This project was designed and developed for CS 160 at UC Berkeley in Spring 2019
 
-Project contributors: Netra Sathe, Autumn Wozniak, Leomart Crisostomo, and Corey Hu
+Project Contributors: Netra Sathe, Autumn Wozniak, Leomart Crisostomo, and Corey Hu
 
 ### Installations
 To run the application, clone the repository and run the master branch in Android Studio.
