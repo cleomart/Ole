@@ -1,6 +1,9 @@
 # Olé
 ![](https://github.com/cleomart/Ole/blob/master/OleFrontPage.png)
 
+### Final Demo Link
+https://drive.google.com/file/d/1IcNXDAj0J_4nyel7yGatn99Syxry0Btv/view?usp=sharing
+
 This is an Android app to aid communication in the administration needs of landlords and tenants. 
 
 This project was designed and developed for CS 160 at UC Berkeley in Spring 2019
@@ -24,9 +27,6 @@ using the Android Studio emulator or Android supporting phone. No further steps 
 
 ### Acknowledgements
 This implementation uses Firebase.
-
-### Final Demo Link
-https://drive.google.com/file/d/1IcNXDAj0J_4nyel7yGatn99Syxry0Btv/view?usp=sharing
 
 ### Authors
 - Leomart Crisostomo
